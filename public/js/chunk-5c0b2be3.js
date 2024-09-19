@@ -79,10 +79,10 @@ let P, Y = Promise.all([(() => {
                 try {
                     await e(a), t = !1
                 } catch (s) {
-                    throw t = !1, s
+                    throw (t = !1, s)
                 }
             }
-        }
+        };
     }
     _.isSSR || h();
 

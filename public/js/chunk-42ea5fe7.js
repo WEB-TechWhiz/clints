@@ -31,7 +31,7 @@ function k(e, r) {
                 if (f) {
                     if (typeof f == "string") return E(f, g);
                     var l = Object.prototype.toString.call(f).slice(8, -1);
-                    return l === "Object" && f.constructor && (l = f.constructor.name), l === "Map" || l === "Set" ? Array.from(f) : l === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(l) ? E(f, g) : void 0
+                    return l === "Object" && f.constructor && (l = f.constructor.name), l === "Map" || l === "Set" ? Array.from(f) : l === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(l) ? E(f, g) : void 0;
                 }
             }(e)) || r && e && typeof e.length == "number") {
             t && (e = t);

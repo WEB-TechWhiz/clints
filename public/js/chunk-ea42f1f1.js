@@ -1166,7 +1166,7 @@ let ld, cd, Ta, dd, md, Es, Ls, ud, Fs, Sa, pd, at, Pt, hd, Bt, gd, fd, yd, bd, 
         const n = Tc(t, a);
         await Promise.all(n.map(async i => {
             var o;
-            F(i.isEnv("CLIENT_ONLY") || i.isEnv("CLIENT_AND_SERVER")), !(s && i.isEnv("CLIENT_AND_SERVER")) && await ((o = i.loadExportNames) === null || o === void 0 ? void 0 : o.call(i))
+            F(i.isEnv("CLIENT_ONLY") || i.isEnv("CLIENT_AND_SERVER")), !(s && i.isEnv("CLIENT_AND_SERVER")) && (await (o = i.loadExportNames) === null || o === void 0 ? void 0 : o.call(i))
         }))
     }
 
@@ -1445,9 +1445,9 @@ let ld, cd, Ta, dd, md, Es, Ls, ud, Fs, Sa, pd, at, Pt, hd, Bt, gd, fd, yd, bd, 
             if (!c && n.status === 404) {
                 Kt(t.urlOriginal);
                 const d = new Error("Page doesn't exist");
-                throw Object.assign(d, {
+                throw (Object.assign(d, {
                     _abortRendering: !0
-                }), d
+                }), d)
             }
             X(c, `Wrong HTTP Response Header \`content-type\` value for URL ${s} (it should be \`application/json\` but we got \`${l}\`). Make sure to use \`pageContext.httpResponse.contentType\`, see https://github.com/brillout/vite-plugin-ssr/issues/191`)
         }
@@ -1579,7 +1579,7 @@ let ld, cd, Ta, dd, md, Es, Ls, ud, Fs, Sa, pd, at, Pt, hd, Bt, gd, fd, yd, bd, 
                 Kt(o);
                 return
             }
-            if (c && !await hn(o)) {
+            if (c && !(await hn(o))) {
                 Kt(o);
                 return
             }
@@ -1615,7 +1615,7 @@ let ld, cd, Ta, dd, md, Es, Ls, ud, Fs, Sa, pd, at, Pt, hd, Bt, gd, fd, yd, bd, 
             if (ve(p, v), _s(p, "onPageTransitionStart"), Me.onPageTransitionStart = p.exports.onPageTransitionStart, p.exports.hydrationCanBeAborted ? g = !0 : Ze(!Ld(), "You seem to be using React; we recommend setting `hydrationCanBeAborted` to `true`, see https://vite-plugin-ssr.com/clientRouting", {
                     showStackTrace: !1,
                     onlyOnce: !0
-                }), !u() && (a && await a, !u())) {
+                }), !u() && (a && (await a), !u())) {
                 if (Lm(o, r), xn.markNavigationChange(), F(a === void 0), a = (async () => {
                         const _ = jn(p);
                         u1(p);
@@ -1793,7 +1793,7 @@ let ld, cd, Ta, dd, md, Es, Ls, ud, Fs, Sa, pd, at, Pt, hd, Bt, gd, fd, yd, bd, 
             if (En.has(a)) return;
             En.set(a, !0);
             const s = a.getAttribute("href");
-            if (gn(a) || (F(s), !await hn(s)) || yn(s)) return;
+            if (gn(a) || (F(s), !(await hn(s))) || yn(s)) return;
             const n = um(t, a);
             if (n.prefetchStaticAssets) {
                 if (n.prefetchStaticAssets.when === "HOVER") a.addEventListener("mouseover", () => Ma(s)), a.addEventListener("touchstart", () => Ma(s), {
@@ -3134,7 +3134,7 @@ let ld, cd, Ta, dd, md, Es, Ls, ud, Fs, Sa, pd, at, Pt, hd, Bt, gd, fd, yd, bd, 
         const t = Date.now();
         for (;;) {
             try {
-                if (await Eu() !== -1) break
+                if ((await Eu()) !== -1) break
             } catch (a) {
                 console.log("Function failed:", a);
                 break
@@ -3511,7 +3511,7 @@ let ld, cd, Ta, dd, md, Es, Ls, ud, Fs, Sa, pd, at, Pt, hd, Bt, gd, fd, yd, bd, 
                     break
             }
             const m = async g => {
-                    g && await t.loadFull(), t.state = g ? 1 : 0, t.id = String(t.id).replace(/(_.*$)|$/, `_${Number(g)}`), n.chatList = n.chatList.concat()
+                    g && (await t.loadFull()), t.state = g ? 1 : 0, t.id = String(t.id).replace(/(_.*$)|$/, `_${Number(g)}`), n.chatList = n.chatList.concat()
                 },
                 h = c || l;
             return e.jsxs(it, {
@@ -5503,7 +5503,7 @@ let ld, cd, Ta, dd, md, Es, Ls, ud, Fs, Sa, pd, at, Pt, hd, Bt, gd, fd, yd, bd, 
             },
             v = async () => {
                 const R = _();
-                if (R >= r.minM * 1e3 && !await ke.confirm(e.jsx(Mr, {}))) return;
+                if (R >= r.minM * 1e3 && !(await ke.confirm(e.jsx(Mr, {})))) return;
                 const j = await ad();
                 if (!j) return;
                 const {
@@ -10137,7 +10137,7 @@ let ld, cd, Ta, dd, md, Es, Ls, ud, Fs, Sa, pd, at, Pt, hd, Bt, gd, fd, yd, bd, 
         const t = Date.now();
         for (;;) {
             try {
-                if (await If() !== -1) break
+                if ((await If()) !== -1) break
             } catch (a) {
                 console.log("Function failed:", a);
                 break
@@ -12148,7 +12148,7 @@ images/22
             } = be,
             m = o === "BCD",
             h = async () => {
-                d && await c() && S.emit("rewardClaim")
+                d && (await c()) && S.emit("rewardClaim")
             };
         f.useEffect(() => {
             be.init(!0)
@@ -13847,7 +13847,7 @@ images/22
                 field: `img${s}`,
                 value: i
             }), s++))
-        }), a
+        }), a;
     }
 
     function yv(t) {
@@ -18608,9 +18608,9 @@ images/22
                 } = await K(() =>
                     import ("./chunk-42ea5fe7.js"), []);
                 m = async () => {
-                    c && c.waiting && await p(c.waiting, {
+                    c && c.waiting && (await p(c.waiting, {
                         type: "SKIP_WAITING"
-                    })
+                    }))
                 }, l = new u("/service-worker.js", {
                     scope: "/",
                     type: "classic"

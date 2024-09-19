@@ -1087,7 +1087,7 @@ let Re, ws, Oe, fe, Ue, Me, Pe, J, Ee, bs, he, Ve, Cs, $e, ks, qe, _s, Ts, re, K
                 field: `img${t}`,
                 value: i
             }), t++))
-        }), a
+        }), a;
     }
 
     function la(s) {
@@ -1158,7 +1158,7 @@ let Re, ws, Oe, fe, Ue, Me, Pe, J, Ee, bs, he, Ve, Cs, $e, ks, qe, _s, Ts, re, K
     }
 
     function Xe(s) {
-        return /http/.exec(s) ? s : Oe.fn.getImgPath(s)
+        return /http/.exec(s) ? s : Oe.fn.getImgPath(s);
     }
 
     function ua({

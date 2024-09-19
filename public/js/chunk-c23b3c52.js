@@ -36,7 +36,7 @@ function xe(e) {
 }
 
 function ye(e) {
-    return e.split(/\r?\n/)
+    return e.split(/\r?\n/);
 }
 
 function j(e, t) {
@@ -95,7 +95,7 @@ function s(e, t) {
             return `Debug info (this is for the ${E.projectName} maintainers; you can ignore this): ${a}`
         })(),
         r = S([`${_e} You stumbled upon a bug in ${E.projectName}'s source code.`, `Reach out at ${E.githubRepository}/issues/new or ${E.discordInviteToolChannel} and include this error stack (the error stack is usually enough to fix the problem).`, "A maintainer will fix the bug (usually under 24 hours).", `Don't hesitate to reach out as it makes ${E.projectName} more robust.`, i].join(" "), T);
-    throw (n = d.onBeforeLog) === null || n === void 0 || n.call(d), r
+    throw ((n = d.onBeforeLog) === null || n === void 0 || n.call(d), r)
 }
 
 function g(e, t) {
@@ -104,7 +104,7 @@ function g(e, t) {
     const i = t.startsWith("[") ? "" : " ",
         r = `${Pe}${i}${t}`,
         a = S(r, T);
-    throw (n = d.onBeforeLog) === null || n === void 0 || n.call(d), a
+    throw ((n = d.onBeforeLog) === null || n === void 0 || n.call(d), a)
 }
 
 function Re(e) {
@@ -185,7 +185,7 @@ function H(e, t) {
     const c = {},
         _ = {};
     Array.from(new URLSearchParams(u || "")).forEach(([F, k]) => {
-        c[F] = k, _[F] = [..._[F] || [], k]
+        c[F] = k, _[F] = [...(_[F] || []), k]
     });
     const {
         origin: h,
@@ -346,7 +346,7 @@ function X(e) {
 }
 
 function ze(e) {
-    return /\.(c|m)?(j|t)sx?$/.test(e)
+    return /\.(c|m)?(j|t)sx?$/.test(e);
 }
 
 function De(e) {
@@ -663,7 +663,7 @@ function rt(e) {
     x.pageFilesAll = nt(e)
 }
 async function it(e, t) {
-    e ? (s(!x.pageFilesGetter), s(t === void 0)) : (s(x.pageFilesGetter), s(typeof t == "boolean"), (!x.pageFilesAll || !t) && await x.pageFilesGetter()), s(x.pageFilesAll);
+    e ? (s(!x.pageFilesGetter), s(t === void 0)) : (s(x.pageFilesGetter), s(typeof t == "boolean"), (!x.pageFilesAll || !t) && (await x.pageFilesGetter())), s(x.pageFilesAll);
     const n = x.pageFilesAll,
         i = st(n);
     return {
@@ -753,9 +753,9 @@ async function lt(e, t) {
             return (l = o.loadFile) === null || l === void 0 ? void 0 : l.call(o)
         }))
     } catch (o) {
-        throw o && Object.assign(o, {
+        throw (o && Object.assign(o, {
             [fe]: !0
-        }), o
+        }), o)
     }
     const {
         exports: i,

@@ -1,5 +1,6 @@
 import { DrawCardProps } from '@/types';
 import React from 'react'
+import Image from 'next/image';
 
 function DrawCard({
     logoSrc,
@@ -13,7 +14,15 @@ function DrawCard({
     return (
         <section className="l1baaa8z" style={{ filter: 'grayscale(0)' }}>
             <div className="upcoming-draw-item-logo-box">
-                <img className="upcoming-draw-item-logo" src={logoSrc} alt="1" />
+ <Image
+ src={logoSrc}
+ alt="1" 
+  width={450}  // Set width based on the source
+  height={300}  // Set appropriate height
+  priority={true}  // Optional: prioritize this image for faster loading
+/>
+                
+                
             </div>
             <div className="bet-address">{betAddress}</div>
             <div className="bet-amount ellipsis">

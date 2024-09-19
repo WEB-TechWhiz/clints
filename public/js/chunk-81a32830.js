@@ -51,7 +51,7 @@ let Je, Qe, Ve, Xe, Ze, et, tt, nt, rt, ot, at, it, ut, ct, wn = Promise.all([((
                             if (!H && d) return d(A, !0);
                             if (I) return I(A, !0);
                             var g = new Error("Cannot find module '" + A + "'");
-                            throw g.code = "MODULE_NOT_FOUND", g
+                            throw (g.code = "MODULE_NOT_FOUND", g)
                         }
                         var D = P[A] = {
                             exports: {}
@@ -362,7 +362,7 @@ let Je, Qe, Ve, Xe, Ze, et, tt, nt, rt, ot, at, it, ut, ct, wn = Promise.all([((
                             }
                         }).catch(function() {
                             return !1
-                        })
+                        });
                     }
 
                     function S(e) {
@@ -489,8 +489,8 @@ let Je, Qe, Ve, Xe, Ze, et, tt, nt, rt, ot, at, it, ut, ct, wn = Promise.all([((
                             e.db = t.db = a;
                             for (var i = 0; i < n.length; i++) n[i]._dbInfo.db = a
                         }).catch(function(a) {
-                            throw K(e, a), a
-                        })
+                            throw (K(e, a), a)
+                        });
                     }
 
                     function X(e, t, n, o) {
@@ -820,8 +820,8 @@ let Je, Qe, Ve, Xe, Ze, et, tt, nt, rt, ot, at, it, ut, ct, wn = Promise.all([((
                                             j._dbInfo.db = _, U(j._dbInfo)
                                         }
                                     }).catch(function(_) {
-                                        throw (K(e, _) || d.resolve()).catch(function() {}), _
-                                    })
+                                        throw ((K(e, _) || d.resolve()).catch(function() {}), _)
+                                    });
                                 }
                             }) : r = i.then(function(u) {
                                 z(e);
@@ -851,8 +851,8 @@ let Je, Qe, Ve, Xe, Ze, et, tt, nt, rt, ot, at, it, ut, ct, wn = Promise.all([((
                                         U(k._dbInfo)
                                     }
                                 }).catch(function(E) {
-                                    throw (K(e, E) || d.resolve()).catch(function() {}), E
-                                })
+                                    throw ((K(e, E) || d.resolve()).catch(function() {}), E)
+                                });
                             })
                         }
                         return g(r, t), r
@@ -1596,14 +1596,14 @@ let Je, Qe, Ve, Xe, Ze, et, tt, nt, rt, ot, at, it, ut, ct, wn = Promise.all([((
                                 for (var t = 0, n = be.length; t < n; t++) cn(this, be[t])
                             }, e.prototype.createInstance = function(t) {
                                 return new e(t)
-                            }, e
+                            }, e;
                         }(),
                         fn = new sn;
                     N.exports = fn
                 }, {
                     3: 3
                 }]
-            }, {}, [4])(4)
+            }, {}, [4])(4);
         })
     })(q);
     var W = q.exports;

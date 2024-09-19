@@ -21,15 +21,18 @@ function Header({ setOpen }: Props) {
                     <div className="pdjiuoz left">
                         <div className="cfzn5qq">
                             {/* Casino Link */}
-                            <Link href={"/casino"}>
-                                <a href="/casino" keep-scroll-position="true" className={`header-link-item casino ${pathname == "/casino" ? "active is-active" : ""}`}>
-                                    <div className="img-wrap">
-                                        <svg className="s1ff97qc icon">
-                                            <use xlinkHref='/images/symbol-defs.ef6a79c4.svg#icon_Casino'></use>
-                                        </svg>
-                                    </div>
-                                    <p>Casino</p>
-                                </a>
+                            <Link
+                                href={"/casino"}
+                                keep-scroll-position="true"
+                                className={`header-link-item casino ${pathname == "/casino" ? "active is-active" : ""}`}>
+
+                                <div className="img-wrap">
+                                    <svg className="s1ff97qc icon">
+                                        <use xlinkHref='/images/symbol-defs.ef6a79c4.svg#icon_Casino'></use>
+                                    </svg>
+                                </div>
+                                <p>Casino</p>
+
                             </Link>
                             {/* Sports Link */}
                             <a href="/sports" keep-scroll-position="true" className={`header-link-item sports ${pathname == "/sports" ? "active is-active" : ""}`}>

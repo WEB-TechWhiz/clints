@@ -1,9 +1,16 @@
 import React from 'react'
-
+import Image from 'next/image';
 function Banner() {
     return (
         <section className="banner-box">
-            <img className="banner-img" src="/images/lottery/banner-pc-6296a2cf.png" alt="banner" />
+            <Image
+  className="banner-img"
+  src="/images/lottery/banner-pc-6296a2cf.png"
+  alt="banner"
+  width={500}   // Set an appropriate width
+  height={300}  // Set an appropriate height
+  priority={true}  // Optional: prioritizes loading
+/>
             <section className="banner-title-box">
                 <div className="banner-title">
                     <h1 className="banner-title-name">LOTTERY</h1>

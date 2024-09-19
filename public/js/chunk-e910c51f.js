@@ -94,9 +94,9 @@ function dt() {
                 var dr = z("bug-string-char-index"),
                     fe = function(h, w) {
                         var f, O, g, k = 0;
-                        for (g in (f = function() {
+                        for (g in ((f = function() {
                                 this.valueOf = 0
-                            }).prototype.valueOf = 0, O = new f) qe.call(O, g) && k++;
+                            }).prototype.valueOf = 0, O = new f)) qe.call(O, g) && k++;
                         return f = O = null, k ? fe = function(j, S) {
                             var R, nt, J = kt.call(j) == "[object Function]";
                             for (R in j) J && R == "prototype" || !qe.call(j, R) || (nt = R === "constructor") || S(R);
@@ -230,7 +230,7 @@ function dt() {
                             114: "\r"
                         },
                         G = function() {
-                            throw C = Me = null, ct()
+                            throw (C = Me = null, ct())
                         },
                         Vt = function() {
                             for (var h, w, f, O, g, k = Me, j = k.length; C < j;) switch (g = k.charCodeAt(C)) {
@@ -350,7 +350,7 @@ function dt() {
             t.atob(" ")
         } catch (a) {
             t.atob = (e = t.atob, (r = function(l) {
-                return e(String(l).replace(/[\t\n\f\r ]+/g, ""))
+                return e(String(l).replace(/[\t\n\f\r ]+/g, ""));
             }).original = e, r)
         } else {
             var e, r, n = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
@@ -482,7 +482,7 @@ function b(t) {
 }
 
 function wt(t) {
-    return t.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "")
+    return t.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "");
 }
 
 function yr(t) {
@@ -518,9 +518,9 @@ function yr(t) {
         var i = r.split("#"),
             a = i[0],
             l = i.slice(1).join("#");
-        for (var u in n = this._regex.exec(a), this._fields) typeof n[this._fields[u]] < "u" && (this._values[u] = n[this._fields[u]]);
+        for (var u in (n = this._regex.exec(a), this._fields)) typeof n[this._fields[u]] < "u" && (this._values[u] = n[this._fields[u]]);
         this._values.Hostname = this._values.Host.replace(/:\d+$/, ""), this._values.Origin = this._values.Protocol + "://" + this._values.Hostname, this._values.Fragment = l
-    }, new e(t)
+    }, new e(t);
 }
 
 function Ot(t) {
@@ -666,7 +666,7 @@ var zt = function() {
             return l.length > 0 && (u = d(u, l)), u.toString(16)
         }() + "-" + e + "-" + t();
         return r || (String(ft()) + String(ft()) + String(ft())).slice(2, 15)
-    }
+    };
 }();
 
 function gt(t) {
@@ -1010,7 +1010,7 @@ var Pe = {
         }
 
         function x(It) {
-            return !!It && It.replace(/\r\n/g, "")
+            return !!It && It.replace(/\r\n/g, "");
         }
         b(i) && i !== "" && (y = "; SameSite=" + i), a && (_ = "; secure");
         var ct = "",
@@ -1098,7 +1098,7 @@ function ya(t) {
 }
 
 function ba(t) {
-    return typeof t == "string" && t.match(/^[a-zA-Z0-9\u4e00-\u9fa5\-\.]+$/) ? t : ""
+    return typeof t == "string" && t.match(/^[a-zA-Z0-9\u4e00-\u9fa5\-\.]+$/) ? t : "";
 }
 
 function Sr(t, e) {
@@ -1147,13 +1147,13 @@ function Ve(t) {
             Q.log(u)
         }
         return a && gt(a) ? n(a) : null
-    }()) && gt(e) ? e : null
+    }()) && gt(e) ? e : null;
 }
 
 function Cn(t, e) {
     var r = "",
         n = "";
-    return t.textContent ? r = wt(t.textContent) : t.innerText && (r = wt(t.innerText)), r && (r = r.replace(/[\r\n]/g, " ").replace(/[ ]+/g, " ").substring(0, 255)), n = r || "", e !== "input" && e !== "INPUT" || (n = t.value || ""), n
+    return t.textContent ? r = wt(t.textContent) : t.innerText && (r = wt(t.innerText)), r && (r = r.replace(/[\r\n]/g, " ").replace(/[ ]+/g, " ").substring(0, 255)), n = r || "", e !== "input" && e !== "INPUT" || (n = t.value || ""), n;
 }
 
 function xt(t, e) {
@@ -1210,7 +1210,7 @@ function wa() {
 function Pr() {
     var t, e = {},
         r = navigator.userAgent.toLowerCase();
-    return (t = r.match(/ qq\/([\d.]+)/)) ? e.qqBuildinBrowser = Number(t[1].split(".")[0]) : (t = r.match(/mqqbrowser\/([\d.]+)/)) ? e.qqBrowser = Number(t[1].split(".")[0]) : (t = r.match(/opera.([\d.]+)/)) ? e.opera = Number(t[1].split(".")[0]) : (t = r.match(/msie ([\d.]+)/)) ? e.ie = Number(t[1].split(".")[0]) : (t = r.match(/edge.([\d.]+)/)) ? e.edge = Number(t[1].split(".")[0]) : (t = r.match(/firefox\/([\d.]+)/)) ? e.firefox = Number(t[1].split(".")[0]) : (t = r.match(/chrome\/([\d.]+)/)) ? e.chrome = Number(t[1].split(".")[0]) : (t = r.match(/version\/([\d.]+).*safari/)) ? e.safari = Number(t[1].match(/^\d*.\d*/)) : (t = r.match(/trident\/([\d.]+)/)) && (e.ie = 11), e
+    return (t = r.match(/ qq\/([\d.]+)/)) ? e.qqBuildinBrowser = Number(t[1].split(".")[0]) : (t = r.match(/mqqbrowser\/([\d.]+)/)) ? e.qqBrowser = Number(t[1].split(".")[0]) : (t = r.match(/opera.([\d.]+)/)) ? e.opera = Number(t[1].split(".")[0]) : (t = r.match(/msie ([\d.]+)/)) ? e.ie = Number(t[1].split(".")[0]) : (t = r.match(/edge.([\d.]+)/)) ? e.edge = Number(t[1].split(".")[0]) : (t = r.match(/firefox\/([\d.]+)/)) ? e.firefox = Number(t[1].split(".")[0]) : (t = r.match(/chrome\/([\d.]+)/)) ? e.chrome = Number(t[1].split(".")[0]) : (t = r.match(/version\/([\d.]+).*safari/)) ? e.safari = Number(t[1].match(/^\d*.\d*/)) : (t = r.match(/trident\/([\d.]+)/)) && (e.ie = 11), e;
 }
 
 function it(t) {
@@ -1295,11 +1295,11 @@ function et(t) {
 }
 
 function In(t) {
-    return typeof t != "string" ? !1 : /^https?:\/\/.+/.test(t) !== !1 || (Q.log("Invalid URL"), !1)
+    return typeof t != "string" ? !1 : /^https?:\/\/.+/.test(t) !== !1 || (Q.log("Invalid URL"), !1);
 }
 
 function An() {
-    return !!navigator.userAgent.match(/iPhone|iPad|iPod/i)
+    return !!navigator.userAgent.match(/iPhone|iPad|iPod/i);
 }
 
 function Oe(t) {
@@ -1312,7 +1312,7 @@ function Oe(t) {
 }
 
 function $t(t) {
-    return Object.prototype.toString.call(t) == "[object Number]" && /[\d\.]+/.test(String(t))
+    return Object.prototype.toString.call(t) == "[object Number]" && /[\d\.]+/.test(String(t));
 }
 
 function Pa() {
@@ -1501,21 +1501,21 @@ var Ia = {
         encode: function(t) {
             return t.replace(/[+\/=]/g, function(e) {
                 return Ia[e]
-            })
+            });
         },
         decode: function(t) {
             return t.replace(/[-_.]/g, function(e) {
                 return Aa[e]
-            })
+            });
         },
         trim: function(t) {
-            return t.replace(/[.=]{1,2}$/, "")
+            return t.replace(/[.=]{1,2}$/, "");
         },
         isBase64: function(t) {
-            return /^[A-Za-z0-9+\/]*[=]{0,2}$/.test(t)
+            return /^[A-Za-z0-9+\/]*[=]{0,2}$/.test(t);
         },
         isUrlSafeBase64: function(t) {
-            return /^[A-Za-z0-9_-]*[.]{0,2}$/.test(t)
+            return /^[A-Za-z0-9_-]*[.]{0,2}$/.test(t);
         }
     },
     xa = {
@@ -1764,7 +1764,7 @@ function Hn() {
 
 function Jn() {
     var t = he(document.referrer);
-    return et(t) || !t.eqid ? zt().replace(/-/g, "") : t.eqid
+    return et(t) || !t.eqid ? zt().replace(/-/g, "") : t.eqid;
 }
 
 function Xt(t, e) {
@@ -2527,12 +2527,12 @@ var Ra = {
                 if (a.login_id)
                     if (l && n.identities.hasOwnProperty(l)) {
                         if (n.identities[l] !== a.login_id) {
-                            for (i in n.identities[l] = a.login_id, n.identities) n.identities.hasOwnProperty(i) && i !== "$identity_cookie_id" && i !== l && delete n.identities[i];
+                            for (i in (n.identities[l] = a.login_id, n.identities)) n.identities.hasOwnProperty(i) && i !== "$identity_cookie_id" && i !== l && delete n.identities[i];
                             n.history_login_id.value = a.login_id
                         }
                     } else {
                         var u = l || Ne.LOGIN;
-                        for (i in n.identities[u] = a.login_id, n.identities) n.identities.hasOwnProperty(i) && i !== "$identity_cookie_id" && i !== u && delete n.identities[i];
+                        for (i in (n.identities[u] = a.login_id, n.identities)) n.identities.hasOwnProperty(i) && i !== "$identity_cookie_id" && i !== u && delete n.identities[i];
                         n.history_login_id = {
                             name: u,
                             value: a.login_id
@@ -3421,13 +3421,13 @@ var Jr = {
         },
         selector: function(t, e) {
             var r = t.parentNode && t.parentNode.nodeType == 9 ? -1 : this.getDomIndex(t);
-            return t.getAttribute && t.getAttribute("id") && /^[A-Za-z][-A-Za-z0-9_:.]*$/.test(t.getAttribute("id")) && (!s.para.heatmap || s.para.heatmap && s.para.heatmap.element_selector !== "not_use_id") && !e ? "#" + t.getAttribute("id") : t.tagName.toLowerCase() + (~r ? ":nth-of-type(" + (r + 1) + ")" : "")
+            return t.getAttribute && t.getAttribute("id") && /^[A-Za-z][-A-Za-z0-9_:.]*$/.test(t.getAttribute("id")) && (!s.para.heatmap || s.para.heatmap && s.para.heatmap.element_selector !== "not_use_id") && !e ? "#" + t.getAttribute("id") : t.tagName.toLowerCase() + (~r ? ":nth-of-type(" + (r + 1) + ")" : "");
         },
         getDomSelector: function(t, e, r) {
             if (!t || !t.parentNode || !t.parentNode.children) return !1;
             e = e && e.join ? e : [];
             var n = t.nodeName.toLowerCase();
-            return t && n !== "body" && t.nodeType == 1 ? (e.unshift(this.selector(t, r)), t.getAttribute && t.getAttribute("id") && /^[A-Za-z][-A-Za-z0-9_:.]*$/.test(t.getAttribute("id")) && s.para.heatmap && s.para.heatmap.element_selector !== "not_use_id" && !r ? e.join(" > ") : this.getDomSelector(t.parentNode, e, r)) : (e.unshift("body"), e.join(" > "))
+            return t && n !== "body" && t.nodeType == 1 ? (e.unshift(this.selector(t, r)), t.getAttribute && t.getAttribute("id") && /^[A-Za-z][-A-Za-z0-9_:.]*$/.test(t.getAttribute("id")) && s.para.heatmap && s.para.heatmap.element_selector !== "not_use_id" && !r ? e.join(" > ") : this.getDomSelector(t.parentNode, e, r)) : (e.unshift("body"), e.join(" > "));
         },
         na: function() {
             var t = document.documentElement.scrollLeft || window.pageXOffset;
@@ -3817,7 +3817,7 @@ function ns(t) {
     var e, r = {};
     if (p(s.para.is_track_latest))
         for (var n in s.para.is_track_latest) r["latest_" + n] = s.para.is_track_latest[n];
-    for (e in s.para.preset_properties = $({}, Qe.preset_properties, r, s.para.preset_properties || {}), Qe) s.para[e] === void 0 && (s.para[e] = Qe[e]);
+    for (e in (s.para.preset_properties = $({}, Qe.preset_properties, r, s.para.preset_properties || {}), Qe)) s.para[e] === void 0 && (s.para[e] = Qe[e]);
     typeof s.para.web_url != "string" || s.para.web_url.slice(0, 3) !== "://" && s.para.web_url.slice(0, 2) !== "//" || (s.para.web_url.slice(0, 3) === "://" ? s.para.web_url = location.protocol.slice(0, -1) + s.para.web_url : s.para.web_url = location.protocol + s.para.web_url), Gt.protocol.serverUrl(), s.bridge && s.bridge.initPara();
     var i = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"],
         a = ["www.baidu.", "m.baidu.", "m.sm.cn", "so.com", "sogou.com", "youdao.com", "google.", "yahoo.com/", "bing.com/", "ask.com/"],
@@ -3935,7 +3935,7 @@ function ps(t, e, r) {
             i || (i = !0, location.href = t.href)
         }
         setTimeout(a, 1e3), s.track(e, r, a)
-    })
+    });
 }
 
 function ds(t, e, r) {
@@ -4257,7 +4257,7 @@ function De(t) {
             if (i && e.resultCbs[i]) {
                 if (r = n, e.timeoutCbs[i] && e.timeoutCbs[i].isTimeout) return void(e.resultCbs[i].callbacks.length = 0);
                 if (e.resultCbs[i])
-                    for (var a in e.resultCbs[i].result = r, clearTimeout(e.timerId), e.timeoutCbs[i].callbacks.length = 0, e.resultCbs[i].callbacks) e.resultCbs[i].callbacks[a].call(null, r), e.resultCbs[i].callbacks.splice(a, 1);
+                    for (var a in (e.resultCbs[i].result = r, clearTimeout(e.timerId), e.timeoutCbs[i].callbacks.length = 0, e.resultCbs[i].callbacks)) e.resultCbs[i].callbacks[a].call(null, r), e.resultCbs[i].callbacks.splice(a, 1);
                 return
             }
             return e.appCallJsCallback && e.appCallJsCallback.call(null, r)
@@ -4371,7 +4371,7 @@ De.prototype.call = function(t, e) {
         callType: this.type
     }, t);
     return e && (this.timerId = setTimeout(function() {
-        for (var a in r.timeoutCbs[n].isTimeout = !0, r.timeoutCbs[n].callbacks) r.timeoutCbs[n].callbacks[a].call(null), r.timeoutCbs[n].callbacks.splice(a, 1)
+        for (var a in (r.timeoutCbs[n].isTimeout = !0, r.timeoutCbs[n].callbacks)) r.timeoutCbs[n].callbacks[a].call(null), r.timeoutCbs[n].callbacks.splice(a, 1)
     }, e)), di(i), {
         onResult: function(a) {
             return r.resultCbs[n].result ? (a(r.resultCbs[n].result), this) : (!r.timeoutCbs[n].isTimeout && r.resultCbs[n].callbacks.push(a), this)
@@ -4379,7 +4379,7 @@ De.prototype.call = function(t, e) {
         onTimeout: function(a) {
             return r.timeoutCbs[n].isTimeout ? (a(), this) : (!r.resultCbs[n].result && r.timeoutCbs[n].callbacks.push(a), this)
         }
-    }
+    };
 }, De.prototype.onAppNotify = function(t) {
     this.appCallJsCallback = t
 }, De.prototype.notifyApp = function(t, e) {
@@ -5336,7 +5336,7 @@ var Qr, ue, F, Ue, Yr, Zr = {
         return t != null && Object.prototype.toString.call(t) == "[object Object]"
     },
     Ko = function(t) {
-        return t.match(/\/sd\/(\w+)\/(\w+)$/)
+        return t.match(/\/sd\/(\w+)\/(\w+)$/);
     },
     Fo = function(t) {
         var e = t._.URL(t.para.server_url);
@@ -5545,7 +5545,7 @@ function sl() {
 }
 
 function ol() {
-    return (/sensors-verify/.test(navigator.userAgent) || /sa-sdk-ios/.test(navigator.userAgent)) && !window.MSStream
+    return (/sensors-verify/.test(navigator.userAgent) || /sa-sdk-ios/.test(navigator.userAgent)) && !window.MSStream;
 }
 
 function ll() {
@@ -5564,7 +5564,7 @@ function ll() {
         }
         return !1
     }
-    return !!/sa-sdk-ios/.test(navigator.userAgent)
+    return !!/sa-sdk-ios/.test(navigator.userAgent);
 }
 
 function ul(t, e) {
@@ -6014,7 +6014,7 @@ var qt, ql = {
                             M.indexOf("_sasdk=") > -1 ? ct.push(_) : ct.push(M)
                         }), ct.join("&")
                     };
-                return this.getPartHash(t) ? (a = d.indexOf("_sasdk"), i = d.indexOf("?") > -1 ? a > -1 ? l + u + "#" + d.substring(1, a) + y(d.substring(a, d.length)) : l + u + d + "&" + _ : l + u + "#" + d.substring(1) + "?" + _) : (a = u.indexOf("_sasdk"), i = /^\?(\w)+/.test(u) ? a > -1 ? l + "?" + y(u.substring(1)) + d : l + u + "&" + _ + d : l + "?" + _ + d), e && (e.href = i), i
+                return this.getPartHash(t) ? (a = d.indexOf("_sasdk"), i = d.indexOf("?") > -1 ? a > -1 ? l + u + "#" + d.substring(1, a) + y(d.substring(a, d.length)) : l + u + d + "&" + _ : l + u + "#" + d.substring(1) + "?" + _) : (a = u.indexOf("_sasdk"), i = /^\?(\w)+/.test(u) ? a > -1 ? l + "?" + y(u.substring(1)) + d : l + u + "&" + _ + d : l + "?" + _ + d), e && (e.href = i), i;
             }
         },
         getUrlId: function() {

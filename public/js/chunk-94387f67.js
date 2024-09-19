@@ -1063,9 +1063,9 @@ let Y, W, us, z, v, I, U, ms, ps, hs, gs, Q, fs, M, X, bs, Z, J, ys, at = Promis
                 const j = await qs(e.rewardId);
                 g(), u({
                     claimCash: !0
-                }), (j.lottery || j.freeSpinBean) && await A.delay((s + .5) * 1e3), j.lottery && (d(j.lottery), u({
+                }), (j.lottery || j.freeSpinBean) && (await A.delay((s + .5) * 1e3)), j.lottery && (d(j.lottery), u({
                     claimLottery: !0
-                }), j.freeSpinBean && await A.delay((s + .5) * 1e3)), r.hasSpin && j.freeSpinBean && (B(j.freeSpinBean), u({
+                }), j.freeSpinBean && (await A.delay((s + .5) * 1e3))), r.hasSpin && j.freeSpinBean && (B(j.freeSpinBean), u({
                     claimSpin: !0
                 })), I.updateAll(), u({
                     loading: !1,

@@ -1,5 +1,6 @@
 import React from 'react'
 import ModeBaisedImage from './ModeBaisedImage'
+import Image from 'next/image';
 
 function Banner() {
     return (
@@ -84,37 +85,90 @@ function Banner() {
                                 style={{ transform: 'translate3d(-2082px, 0px, 0px)', transitionDuration: '0ms' }}>
                                 <div className="swiper-slide swiper-slide-next" data-swiper-slide-index="2"
                                     style={{ marginRight: '15px' }}><a href="/promotion/9aa848a845aed44" keep-scroll-position="true"
-                                        target="_self" className="img-box w-3"><img
-                                            src="https://bc.imgix.net/banner/7b/3e/c2/169822209161261.png?auto=format&amp;dpr=1&amp;w=450"
-                                            alt="" /></a><a href="/promotion/9c5ef5e87ecd0e5" keep-scroll-position="true"
-                                                target="_self" className="img-box w-3"><img
-                                            src="https://bc.imgix.net/banner/a4d97d9542.png?auto=format&amp;dpr=1&amp;w=450"
-                                            alt="" /></a><a href="/promotion/858a9620f0d9957" keep-scroll-position="true"
-                                                target="_self" className="img-box w-3"><img
-                                            src="https://bc.imgix.net/banner/3d7641463b.png?auto=format&amp;dpr=1&amp;w=450"
-                                            alt="" /></a></div>
+                                        target="_self" className="img-box w-3"><Image
+                                        src="https://bc.imgix.net/banner/7b/3e/c2/169822209161261.png?auto=format&dpr=1&w=450"
+                                        alt=""
+                                        width={450}  // Set width based on the source
+                                        height={300}  // Set appropriate height
+                                        priority={true}  // Optional: prioritize this image for faster loading
+                                      /></a><a href="/promotion/9c5ef5e87ecd0e5" keep-scroll-position="true"
+                                                target="_self" className="img-box w-3">
+ <Image
+src="https://bc.imgix.net/banner/a4d97d9542.png?auto=format&amp;dpr=1&amp;w=450"
+ alt=""
+  width={450}  // Set width based on the source
+  height={300}  // Set appropriate height
+  priority={true}  // Optional: prioritize this image for faster loading
+/>
+</a><a href="/promotion/858a9620f0d9957" keep-scroll-position="true"
+target="_self" className="img-box w-3">
+ <Image
+ src="https://bc.imgix.net/banner/3d7641463b.png?auto=format&amp;dpr=1&amp;w=450"
+ alt=""
+  width={450}  // Set width based on the source
+  height={300}  // Set appropriate height
+  priority={true}  // Optional: prioritize this image for faster loading
+/>
+</a></div>
                                 <div className="swiper-slide swiper-slide-prev" data-swiper-slide-index="0"
                                     style={{ marginRight: '15px' }}><a href="/events/home" keep-scroll-position="true"
-                                        target="_self" className="img-box w-3"><img
-                                            src="https://bc.imgix.net/banner/721f5a0453.png?auto=format&amp;dpr=1&amp;w=450"
-                                            alt="" /></a><a href="/promotion/5a20f82ddf0a315" keep-scroll-position="true"
-                                                target="_self" className="img-box w-3"><img
-                                            src="https://bc.imgix.net/banner/3f54d15bbf.png?auto=format&amp;dpr=1&amp;w=450"
-                                            alt="" /></a><a href="/promotion/a07c18bf846b41e" keep-scroll-position="true"
-                                                target="_self" className="img-box w-3"><img
-                                            src="https://bc.imgix.net/banner/cdf9cdcb35.png?auto=format&amp;dpr=1&amp;w=450"
-                                            alt="" /></a></div>
+                                        target="_self" className="img-box w-3">
+ <Image
+src="https://bc.imgix.net/banner/721f5a0453.png?auto=format&amp;dpr=1&amp;w=450"
+alt=""
+  width={450}  // Set width based on the source
+  height={300}  // Set appropriate height
+  priority={true}  // Optional: prioritize this image for faster loading
+/>
+</a><a href="/promotion/5a20f82ddf0a315" keep-scroll-position="true"
+ target="_self" className="img-box w-3">
+ <Image
+ src="https://bc.imgix.net/banner/3f54d15bbf.png?auto=format&amp;dpr=1&amp;w=450"
+ alt=""
+  width={450}  // Set width based on the source
+  height={300}  // Set appropriate height
+  priority={true}  // Optional: prioritize this image for faster loading
+/>
+</a><a href="/promotion/a07c18bf846b41e" keep-scroll-position="true"
+target="_self" className="img-box w-3">
+<Image
+src="https://bc.imgix.net/banner/cdf9cdcb35.png?auto=format&amp;dpr=1&amp;w=450"
+ alt=""
+  width={450}  // Set width based on the source
+  height={300}  // Set appropriate height
+  priority={true}  // Optional: prioritize this image for faster loading
+/>
+</a></div>
                                 <div className="swiper-slide swiper-slide-active" data-swiper-slide-index="1"
                                     style={{ marginRight: '15px' }}><a href="/promotion/6c2f47f7e3f6f58" keep-scroll-position="true"
-                                        target="_self" className="img-box w-3"><img
-                                            src="https://bc.imgix.net/banner/18f7e06853.png?auto=format&amp;dpr=1&amp;w=450"
-                                            alt="" /></a><a href="/game/winter-star-by-evoplay" keep-scroll-position="true"
-                                                target="_self" className="img-box w-3"><img
-                                            src="https://bc.imgix.net/banner/9605d8be8e.png?auto=format&amp;dpr=1&amp;w=450"
-                                            alt="" /></a><a href="/promotion/6089eef468c6abe" keep-scroll-position="true"
-                                                target="_self" className="img-box w-3"><img
-                                            src="https://bc.imgix.net/banner/034f862314.png?auto=format&amp;dpr=1&amp;w=450"
-                                            alt="" /></a></div>
+                                        target="_self" className="img-box w-3">
+ <Image
+ src="https://bc.imgix.net/banner/18f7e06853.png?auto=format&amp;dpr=1&amp;w=450"
+alt=""
+  width={450}  // Set width based on the source
+  height={300}  // Set appropriate height
+  priority={true}  // Optional: prioritize this image for faster loading
+/>
+</a><a href="/game/winter-star-by-evoplay" keep-scroll-position="true"
+target="_self" className="img-box w-3">
+                                                    
+<Image
+src="https://bc.imgix.net/banner/9605d8be8e.png?auto=format&amp;dpr=1&amp;w=450"alt=""
+  width={450}  // Set width based on the source
+  height={300}  // Set appropriate height
+  priority={true}  // Optional: prioritize this image for faster loading
+/>
+</a><a href="/promotion/6089eef468c6abe" keep-scroll-position="true"
+target="_self" className="img-box w-3">
+                                                    
+                                                    <Image
+   src="https://bc.imgix.net/banner/034f862314.png?auto=format&amp;dpr=1&amp;w=450"
+  alt=""
+  width={450}  // Set width based on the source
+  height={300}  // Set appropriate height
+  priority={true}  // Optional: prioritize this image for faster loading
+/>
+</a></div>
                             </div>
                         </div><button className="ui-button button-normal navigation-prev-home-banner home-swiper-btn prev">
                             <div className="button-inner"><svg className="s1ff97qc icon">

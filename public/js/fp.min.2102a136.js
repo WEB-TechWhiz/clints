@@ -314,7 +314,7 @@
     var _0x58ea9e = _0x15a9f0(0x3),
         _0x4201d3 = 0x0,
         _0x770ac6 = Math['random'](),
-        _0x148ab8 = _0x58ea9e(0x1['toString']);
+        _0x148ab8 = _0x58ea9e((0x1)['toString']);
     _0x19dc99['exports'] = function(_0x2bd27a) {
         return 'Symbol(' + (void 0x0 === _0x2bd27a ? '' : _0x2bd27a) + ')_' + _0x148ab8(++_0x4201d3 + _0x770ac6, 0x24);
     };
@@ -2754,7 +2754,7 @@
             }
         };
         var _0x29af39 = {};
-        void 0x0 !== _0x29af39['asn1'] && _0x29af39['asn1'] || (_0x29af39['asn1'] = {}), _0x29af39['asn1']['ASN1Util'] = new function() {
+        void 0x0 !== _0x29af39['asn1'] && _0x29af39['asn1'] || (_0x29af39['asn1'] = {}), _0x29af39['asn1']['ASN1Util'] = new (function() {
             this['integerToByteHex'] = function(_0x3f89f3) {
                 var _0x386980 = _0x3f89f3['toString'](0x10);
                 return _0x386980['length'] % 0x2 == 0x1 && (_0x386980 = '0' + _0x386980), _0x386980;
@@ -2840,7 +2840,7 @@
             }, this['jsonToASN1HEX'] = function(_0x358786) {
                 return this['newObject'](_0x358786)['getEncodedHex']();
             };
-        }(), _0x29af39['asn1']['ASN1Util']['oidHexToInt'] = function(_0x4375ed) {
+        })(), _0x29af39['asn1']['ASN1Util']['oidHexToInt'] = function(_0x4375ed) {
             for (var _0x261db3 = '', _0xb1b8e2 = parseInt(_0x4375ed['substr'](0x0, 0x2), 0x10), _0x2b8c4a = (_0x261db3 = Math['floor'](_0xb1b8e2 / 0x28) + '.' + _0xb1b8e2 % 0x28, ''), _0x1a1e2f = 0x2; _0x1a1e2f < _0x4375ed['length']; _0x1a1e2f += 0x2) {
                 var _0x3e7ae6 = ('00000000' + parseInt(_0x4375ed['substr'](_0x1a1e2f, 0x2), 0x10)['toString'](0x2))['slice'](-0x8);
                 _0x2b8c4a += _0x3e7ae6['substr'](0x1, 0x7), '0' == _0x3e7ae6['substr'](0x0, 0x1) && (_0x261db3 = _0x261db3 + '.' + new _0x3ada88(_0x2b8c4a, 0x2)['toString'](0xa), _0x2b8c4a = '');
@@ -3736,7 +3736,7 @@
                     if (!_0x3bc05b[_0x2fdf11]) {
                         if (_0x2fd28d) return _0x2fd28d(_0x2fdf11, !0x0);
                         var _0x2689d6 = new Error('Cannot\x20find\x20module\x20\x27' + _0x2fdf11 + '\x27');
-                        throw _0x2689d6['code'] = 'MODULE_NOT_FOUND', _0x2689d6;
+                        throw (_0x2689d6['code'] = 'MODULE_NOT_FOUND', _0x2689d6);
                     }
                     var _0x311730 = _0x30e895[_0x2fdf11] = {
                         'exports': {}

@@ -1,5 +1,5 @@
 window.blue = {}, window.blue.isMobileDetected = function() {
-        return !!(navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i))
+        return !!(navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i));
     }, window.blue.isFirefox = navigator.userAgent.toLowerCase().indexOf("firefox") > -1, window.console || (console = {
         log: function() {}
     }),
@@ -140,7 +140,7 @@ function generateUid() {
     return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(t) {
         var n = (e + 16 * Math.random()) % 16 | 0;
         return e = Math.floor(e / 16), ("x" == t ? n : 3 & n | 8).toString(16)
-    })
+    });
 }
 
 function setLastClickBlue() {

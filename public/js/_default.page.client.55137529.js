@@ -6368,7 +6368,7 @@ function print() { __p += __j.call(arguments, '') }
         Ne = s;
         const f = e.Layout || kR,
             l = e.onPageData;
-        ca.lng !== n && await ca.setLang(n);
+        ca.lng !== n && (await ca.setLang(n));
         const p = t.isHydration && a !== Mb;
 
         function d(m) {
