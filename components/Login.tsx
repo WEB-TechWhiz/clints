@@ -33,7 +33,7 @@ function Login({ open, setOpen,isMobile }: Props) {
                                         <p className="sign-title"><span>Sign in</span></p>
                                         <form>
                                             <div className="ui-input first-input">
-                                                <div className="input-control"><input type="text" tabIndex={1} autoComplete="off" placeholder="Email / Phone Number" required value="mohammedabdurahoof527@gmail.com" /></div>
+                                                <div className="input-control"><input type="text" tabIndex={1} autoComplete="off" placeholder="Email / Phone Number" required value="https://github.com/mohammedabdurahoof/new-work" /></div>
                                             </div>
                                             <div className="ui-input pjkqlcx">
                                                 <div className="input-control"><input type="password" autoComplete="off" tabIndex={2} placeholder="Login Password" required value="aB-8943485194" />
