@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-     eslint:{
-      ignoreDuringBuilds:true,
-     },
+    images: {
+      domains: ['bc.imgix.net'],
+    },
+    eslint:{
+      ignoreDuringBuilds:true
     }
+  };
   
   module.exports = nextConfig;
   
