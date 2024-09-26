@@ -58,7 +58,7 @@ const Sidebar: FC = () => {
           <span className={`${!isOpen && "hidden"} transition-all duration-200 ease-in-out`}>Deposit</span>
         </li>
         </Link>
-        <Link href={'/admin/withdrawal'}>
+        <Link href={'/admin/Withdrawal'}>
         <li className="group flex items-center px-4 py-3 text-white hover:bg-gray-600 hover:shadow-lg transition-all duration-300 rounded-lg cursor-pointer">
           <Users className="mr-3 group-hover:scale-125 group-hover:text-pink-400 transition-transform duration-300 ease-in-out" />
           <span className={`${!isOpen && "hidden"} transition-all duration-200 ease-in-out`}>Withdrawal</span>
