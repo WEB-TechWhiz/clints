@@ -68,7 +68,7 @@ function Header({ setOpen }: Props) {
                                         <use xlinkHref="/images/symbol-defs.ef6a79c4.svg#icon_Lottery"></use>
                                     </svg>
                                 </div>
-                                <p>Lottery</p>
+                                <p>Admin</p>
                             </a>
                         </div>
                         <div className="page-search-enter"></div>
