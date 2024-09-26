@@ -1,0 +1,52 @@
+/* global.css */
+
+/* Custom sidebar styles */
+
+/* Sidebar background and transitions */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.sidebar {
+    background-color: #1f2937; /* Tailwind’s bg-gray-800 equivalent */
+    width: 16rem; /* Tailwind’s w-64 equivalent */
+    transition: width 0.3s ease;
+  }
+  
+  /* Collapsed sidebar width */
+  .sidebar.collapsed {
+    width: 5rem; /* Tailwind’s w-20 equivalent */
+  }
+  
+  /* Sidebar hover state for links */
+  .sidebar-item {
+    padding: 1rem; /* Tailwind’s px-4 py-3 equivalent */
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #374151; /* Tailwind’s bg-gray-700 equivalent */
+  }
+  
+  /* Hide text in collapsed state */
+  .sidebar.collapsed .sidebar-text {
+    display: none;
+  }
+  
+  .sidebar-icon {
+    margin-right: 0.5rem; /* Tailwind’s mr-2 equivalent */
+  }
+  
+  .sidebar-toggle {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .sidebar-toggle:focus {
+    outline: none;
+  }
+  

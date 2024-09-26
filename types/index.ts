@@ -1,3 +1,4 @@
+import { DefaultSession} from "next-auth";
 import React, { ReactNode } from "react";
 
 export interface CardProps {
@@ -80,4 +81,33 @@ export interface TabProps {
 
 export interface CardsProps {
   title: string;
+}
+
+ declare module'next-auth'{
+  interface user{
+      _id?:string;
+      isVerified?: boolean;
+      Username?: string;
+      isAcceptingMessages?: boolean;
+  }
+interface session {
+  user:{
+    _id?:string;
+    isVerified?: boolean;
+    Username?: string;
+    isAcceptingMessages?: boolean;
+  }&DefaultSession['user']
+}
+ }
+declare module 'next-auth/jwt'{
+  interface JWT{
+    _id?:string;
+    isVerified?: boolean;
+    Username?: string;
+    isAcceptingMessages?: boolean;
+  }
+}
+interface AdminSidebarProps {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }

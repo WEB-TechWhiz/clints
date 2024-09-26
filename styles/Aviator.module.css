@@ -1,0 +1,36 @@
+/* styles/Aviator.module.css */
+.container {
+    text-align: center;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .gameBoard {
+    margin: 20px auto;
+    padding: 20px;
+    width: 400px;
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+  }
+  
+  .multiplier {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .crashed {
+    color: red;
+    font-size: 1.5em;
+  }
+  
+  .cashOut {
+    color: green;
+    font-size: 1.5em;
+  }
+  
+  .controls button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  
