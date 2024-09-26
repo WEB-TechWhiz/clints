@@ -62,6 +62,14 @@ function Header({ setOpen }: Props) {
                                 </div>
                                 <p>Lottery</p>
                             </a>
+                            <a href="/admin" keep-scroll-position="true" className={`header-link-item lottery ${pathname == "/lottery" ? "active is-active" : ""}`}>
+                                <div className="img-wrap">
+                                    <svg className="s1ff97qc icon">
+                                        <use xlinkHref="/images/symbol-defs.ef6a79c4.svg#icon_Lottery"></use>
+                                    </svg>
+                                </div>
+                                <p>Lottery</p>
+                            </a>
                         </div>
                         <div className="page-search-enter"></div>
                     </div>
